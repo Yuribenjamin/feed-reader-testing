@@ -56,16 +56,15 @@ The starter code is provided by Udacity for the Udacity FEND's students.
     Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for
     Udacious Test Coverage), provide documentation for what these future features are and what the tests are checking for.
     
-```
 
-[+] Test Coverage:
+### Test Coverage:
+
 All Required Tests Provided
 
 The required tests for the project (RSS Feed testing, RSS Feed properties, menu default state, and menu hiding/showing) are all provided and are comprehensive enough to adequately test the functionality.
 
 Tests should be independent of one another.
 
-```
 
 ## Licence
 The contents of this repository are covered under the [MIT License](https://rem.mit-license.org/).
