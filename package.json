@@ -1,0 +1,19 @@
+{
+  "name": "feedreader",
+  "version": "1.0.0",
+  "description": "feed reader testing fifth project in google developer scholarship passed on testing using jasmine framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuribenjamin/feedreader.git"
+  },
+  "author": "Ibrahim Ragab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yuribenjamin/feedreader/issues"
+  },
+  "homepage": "https://github.com/Yuribenjamin/feedreader#readme"
+}
