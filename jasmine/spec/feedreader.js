@@ -56,8 +56,18 @@ $(function() {
         // using document.body for fast result check :
         // https://stackoverflow.com/questions/34745048/which-method-is-faster-to-select-body-element
         let body = document.body;
+        let menu = document.querySelector('.menu-icon-link');
+
         it('Hidden by default', function(){
-            expect(body.classList).toContain('menu-hidden')
+            expect(body.classList).toContain('menu-hidden');
+        });
+        
+        // test that ensures the menu changes visibility when the menu icon is clicked
+        it('Hide and display menu by click', function (){
+            menu.click();
+            expect(body.classList).not.toContain('menu-hidden');
+            menu.click();
+            expect(body.classList).toContain('menu-hidden');
         });
     });
 
