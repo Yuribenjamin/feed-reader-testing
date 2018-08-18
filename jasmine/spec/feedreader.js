@@ -50,20 +50,16 @@ $(function() {
         });
     });
 
-
-    /* TODO: Write a new test suite named "The menu" */
-
-        /* TODO: Write a test that ensures the menu element is
-         * hidden by default. You'll have to analyze the HTML and
-         * the CSS to determine how we're performing the
-         * hiding/showing of the menu element.
-         */
-
-         /* TODO: Write a test that ensures the menu changes
-          * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
-          */
+    // Test suite ' The Menu' 
+    describe('The menu', function() {
+        //test that ensures the menu element is hidden by default.
+        // using document.body for fast result check :
+        // https://stackoverflow.com/questions/34745048/which-method-is-faster-to-select-body-element
+        let body = document.body;
+        it('Hidden by default', function(){
+            expect(body.classList).toContain('menu-hidden')
+        });
+    });
 
     /* TODO: Write a new test suite named "Initial Entries" */
 
