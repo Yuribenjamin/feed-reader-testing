@@ -19,7 +19,7 @@ must passing all the required test suites using [Jasmine](http://jasmine.github.
 
 ## Run Application
 
-Live [Try it](https://yuribenjamin.github.io/feedreader/).
+Live [Try it](https://yuribenjamin.github.io/feed-reader-testing/).
 Or you can clone or download and open html file in browser.
 
 
