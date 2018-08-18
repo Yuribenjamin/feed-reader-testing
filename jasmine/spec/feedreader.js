@@ -13,7 +13,7 @@ $(function() {
     * a related set of tests. This suite is all about the RSS
     * feeds definitions, the allFeeds variable in our application.
     */
-    describe('RSS Feeds', function() {
+    describe('RSS Feeds', () => {
         /* This is our first test - it tests to make sure that the
          * allFeeds variable has been defined and that it is not
          * empty. Experiment with this before you get started on
@@ -21,7 +21,7 @@ $(function() {
          * allFeeds in app.js to be an empty array and refresh the
          * page?
          */
-        it('are defined', function() {
+        it('are defined', () => {
             expect(allFeeds).toBeDefined();
             expect(allFeeds.length).not.toBe(0);
         });
@@ -31,7 +31,7 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('URL defined and not empty', function() {
+        it('URL defined and not empty', () => {
             for (let feed of allFeeds) {
                 expect(feed.url).toBeDefined();
                 expect(feed.url.length).not.toBe(0);
@@ -42,7 +42,7 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
-        it('Name defined and not empty', function() {
+        it('Name defined and not empty', () => {
             for (let feed of allFeeds) {
                 expect(feed.name).toBeDefined();
                 expect(feed.name.length).not.toBe(0);
@@ -51,19 +51,19 @@ $(function() {
     });
 
     // Test suite ' The Menu' 
-    describe('The menu', function() {
+    describe('The menu', () => {
         //test that ensures the menu element is hidden by default.
         // using document.body for fast result check :
         // https://stackoverflow.com/questions/34745048/which-method-is-faster-to-select-body-element
         let body = document.body;
         let menu = document.querySelector('.menu-icon-link');
 
-        it('Hidden by default', function(){
+        it('Hidden by default', () => {
             expect(body.classList).toContain('menu-hidden');
         });
         
         // test that ensures the menu changes visibility when the menu icon is clicked
-        it('Hide and display menu by click', function (){
+        it('Hide and display menu by click', () => {
             menu.click();
             expect(body.classList).not.toContain('menu-hidden');
             menu.click();
