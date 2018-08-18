@@ -85,11 +85,24 @@ $(function() {
             done();
         }));
     });
+    
+    // test that ensures when a new feed is loaded by the loadFeed function that the content actually changes.
+    
+    describe('New Feed Selection', () => {
+        let myFeed;
+        let newFeed = document.querySelector('.feed').innerHTML;
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
-
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
-         */
+        beforeEach((done) => {
+            loadFeed(0, () => {
+                myFeed = document.querySelector('.feed').innerHTML;
+                loadFeed(1, () => {
+                    done();
+                });
+            });
+        });
+        it('Feed is loaded and the content is changed', ((done) => {
+            expect(myFeed).not.toBe(newFeed);
+            done();
+        }));
+    });
 }());
