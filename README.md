@@ -17,10 +17,20 @@ Feed Reader Testing project 5 in Google Developer Scholarship a web-based applic
 must passing all the required test suites using [Jasmine](http://jasmine.github.io/) framework.
 
 
-## Run Application
+## How to run the project
 
-Live [Try it](https://yuribenjamin.github.io/feed-reader-testing/).
-Or you can clone or download and open html file in browser.
+1. Download or clone the repository in your machine:
+
+> `https://github.com/Yuribenjamin/restaurant-reviews.git`
+
+2. Running a simple local HTTP server
+    - Download [python](https://www.python.org/)
+    - Check python version `python -V`
+    - If you running Python 2.x Run `python -m SimpleHTTPServer 8000`
+    - If you running Python 3.x Run `python -m SimpleHTTPServer 8000`
+    - Terminal ouput `Serving HTTP on 0.0.0.0 port 8000 ...`
+
+3. Then navigate to the browser and enter `http://localhost:8000/`
 
 
 ## Dependencies
