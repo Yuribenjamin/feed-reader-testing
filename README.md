@@ -27,7 +27,7 @@ must passing all the required test suites using [Jasmine](http://jasmine.github.
     - Download [python](https://www.python.org/)
     - Check python version `python -V`
     - If you running Python 2.x Run `python -m SimpleHTTPServer 8000`
-    - If you running Python 3.x Run `python -m SimpleHTTPServer 8000`
+    - If you running Python 3.x Run `python -m http.server`
     - Terminal ouput `Serving HTTP on 0.0.0.0 port 8000 ...`
 
 3. Then navigate to the browser and enter `http://localhost:8000/`
